@@ -2,53 +2,73 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/themes/home.css">
         <title>Temporizador Geek</title>
     </head>
-    <body style="background-color: dimgrey;">
-        <header class="navbar navbar-nav flex-row -flex align-content-center flex-wrap" style="background-color: rgb(122, 121, 121);">
-            <h3 class="display-6 text-white">Temporizador Geek</h3>
+    <body>
+        <header>
+            <h3>Temporizador Geek</h3>
             <div id="buttonsHeader">
-                <button class="btn btn-secondary rounded-circle" class="theme" id="home">1</button>
-                <button class="btn btn-secondary rounded-circle" class="theme" id="gameOfThrones">2</button>
-                <button class="btn btn-secondary rounded-circle" class="theme" id="harryPotter">3</button>
-                <button class="btn btn-secondary rounded-circle" class="theme" id="bobEsponja">4</button>
-                <button class="btn btn-secondary rounded-circle" class="theme" id="stitch">5</button>
-                <button class="btn btn-secondary rounded-circle" class="theme" id="theBibBangTheory">6</button>
-                <button class="btn btn-secondary rounded-circle" class="theme" id="friends">7</button>
+                <div class="growContainer">
+                    <button class="toHome circleButton" id="home">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
+                            <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293z"/>
+                            <path d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293z"/>
+                          </svg>
+                    </button>
+                </div>
+                <div class="growContainer">
+                    <button class="toGot circleButton" id="gameOfThrones">GoT</button>
+                </div>
+               <div class="growContainer">
+                <button class="toHp circleButton" id="harryPotter">HP</button>
+               </div>
+                <div class="growContainer">
+                    <button class="toBob circleButton" id="bobEsponja">Bob</button>
+                </div>
+                <div class="growContainer">
+                    <button class="toStitch circleButton" id="stitch">Stitch</button>
+                </div>
+                <div class="growContainer">
+                    <button class="toTbbt circleButton" id="theBibBangTheory">TBBT</button>
+                </div>
+               <div class="growContainer">
+                <button class="toFriends circleButton" id="friends">Friends</button>
+               </div>
             </div>
         </header>
-        <div class="container" style="height: 100vh; display: flex; justify-content: center; align-items: center;">
-            <div class="card text-center d-flex justify-content-around" style="width: 48rem; height: 12rem; background-color: rgb(122, 121, 121);" id="box">
-                <div class="d-flex p-2 bd-highlight justify-content-around" id="headerBox">
-                    <div class="inputTime" style="width: 18rem;">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text text-white" style="background-color: transparent;">Hora / Minuto</span>
-                            <input type="number" class="form-control text-white" style="background-color: transparent;" id="inputHour">
-                            <input type="number" class="form-control text-white" style="background-color: transparent;" id="inputMinute">
+        <div class="container" >
+            <div id="box">
+                <div id="headerBox">
+                    <div class="inputTime">
+                        <div>
+                            <input name="hour" type="number" id="inputHour">
+                            <label for="hour"><span>Hora</span></label>
+                            <input name="minute" type="number" id="inputMinute">
+                            <label for="minute"><span>Minuto</span></label>
                         </div>
                     </div>
                     <div>
-                        <button class="btn btn-secondary rounded-circle" id="startButton">
+                        <button id="startButton">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
                                 <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"/>
                               </svg>
                         </button>
-                        <button class="btn btn-secondary rounded-circle" id="pauseButton">
+                        <button id="pauseButton">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pause-fill" viewBox="0 0 16 16">
                                 <path d="M5.5 3.5A1.5 1.5 0 0 1 7 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5m5 0A1.5 1.5 0 0 1 12 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5"/>
                               </svg>
                         </button>
-                        <button class="btn btn-secondary rounded-circle" id="resetButton">
+                        <button id="resetButton">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-stop-fill" viewBox="0 0 16 16">
                                 <path d="M5 3.5h6A1.5 1.5 0 0 1 12.5 5v6a1.5 1.5 0 0 1-1.5 1.5H5A1.5 1.5 0 0 1 3.5 11V5A1.5 1.5 0 0 1 5 3.5"/>
                               </svg>
                         </button>
                     </div>
                 </div>
-                <div class="d-flex justify-content-center align-items-center">
-                    <h4 class="display-3 text-white" id="display">00:00:00</h4>
+                <div class="display">
+                    <h4 id="display">00:00:00</h4>
                 </div>
             </div>
         </div>
