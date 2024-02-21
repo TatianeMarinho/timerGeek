@@ -2,35 +2,42 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="/themes/home.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>Temporizador Geek</title>
     </head>
-    <body>
-        <header>
+    <body style="background-color: dimgrey;">
+        <header class="navbar navbar-nav flex-row -flex align-content-center flex-wrap">
             <h3>Temporizador Geek</h3>
             <div id="buttonsHeader">
-                <button class="theme" id="home">1</button>
-                <button class="theme" id="gameOfThrones">2</button>
-                <button class="theme" id="harryPotter">3</button>
-                <button class="theme" id="bobEsponja">4</button>
-                <button class="theme" id="stitch">5</button>
-                <button class="theme" id="theBibBangTheory">6</button>
-                <button class="theme" id="friends">7</button>
+                <button class="btn btn-secondary rounded-circle" class="theme" id="home">1</button>
+                <button class="btn btn-secondary rounded-circle" class="theme" id="gameOfThrones">2</button>
+                <button class="btn btn-secondary rounded-circle" class="theme" id="harryPotter">3</button>
+                <button class="btn btn-secondary rounded-circle" class="theme" id="bobEsponja">4</button>
+                <button class="btn btn-secondary rounded-circle" class="theme" id="stitch">5</button>
+                <button class="btn btn-secondary rounded-circle" class="theme" id="theBibBangTheory">6</button>
+                <button class="btn btn-secondary rounded-circle" class="theme" id="friends">7</button>
             </div>
         </header>
-        <div class="container">
-            <div class="box">
-                <div class="headerBox">
-                    <div class="inputTime">
-                        <input type="number" id="inputHour" placeholder="horas">
-                        <input type="number" id="inputMinute" placeholder="minutos">
+        <div class="container" style="height: 100vh; display: flex; justify-content: center; align-items: center;">
+            <div class="card text-center d-flex justify-content-around" style="width: 48rem; height: 12rem; background-color: rgb(153, 148, 148);" id="box">
+                <div class="d-flex p-2 bd-highlight justify-content-around" id="headerBox">
+                    <div class="inputTime" style="width: 18rem;">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">Hora/Minuto</span>
+                            <input type="number" class="form-control" id="inputHour">
+                            <input type="number" class="form-control" id="inputMinute">
+                        </div>
                     </div>
-                    <button id="startButton">start</button>
-                    <button id="pauseButton">pause</button>
-                    <button id="resetButton">reset</button>
+                    <div>
+                        <button class="btn btn-primary rounded-circle" id="startButton">start</button>
+                        <button class="btn btn-primary rounded-circle" id="pauseButton">pause</button>
+                        <button class="btn btn-primary rounded-circle" id="resetButton">reset</button>
+                    </div>
                 </div>
-                <h4 id="display">00:00:00</h4>
+                <div class="d-flex justify-content-center align-items-center">
+                    <h4 id="display">00:00:00</h4>
+                </div>
             </div>
         </div>
         <script src="scriptTimer.js"></script>

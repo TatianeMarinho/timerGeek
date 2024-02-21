@@ -1,0 +1,27 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #555353;
+    margin:0;
+    padding:0;
+}
+
+header {
+    background-color: #666464;
+    padding: 5px 0;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+}
+
+header h3 {
+    margin: 0;
+    flex-grow: 3;
+    text-align: center;
+    color:aliceblue
+}
+
+#buttonsHeader {
+
+    flex-grow: 1;
+    text-align: center;
+}
