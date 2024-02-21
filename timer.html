@@ -7,8 +7,8 @@
         <title>Temporizador Geek</title>
     </head>
     <body style="background-color: dimgrey;">
-        <header class="navbar navbar-nav flex-row -flex align-content-center flex-wrap">
-            <h3>Temporizador Geek</h3>
+        <header class="navbar navbar-nav flex-row -flex align-content-center flex-wrap" style="background-color: rgb(122, 121, 121);">
+            <h3 class="display-6 text-white">Temporizador Geek</h3>
             <div id="buttonsHeader">
                 <button class="btn btn-secondary rounded-circle" class="theme" id="home">1</button>
                 <button class="btn btn-secondary rounded-circle" class="theme" id="gameOfThrones">2</button>
@@ -20,13 +20,13 @@
             </div>
         </header>
         <div class="container" style="height: 100vh; display: flex; justify-content: center; align-items: center;">
-            <div class="card text-center d-flex justify-content-around" style="width: 48rem; height: 12rem; background-color: rgb(153, 148, 148);" id="box">
+            <div class="card text-center d-flex justify-content-around" style="width: 48rem; height: 12rem; background-color: rgb(122, 121, 121);" id="box">
                 <div class="d-flex p-2 bd-highlight justify-content-around" id="headerBox">
                     <div class="inputTime" style="width: 18rem;">
                         <div class="input-group-prepend">
-                            <span class="input-group-text">Hora/Minuto</span>
-                            <input type="number" class="form-control" id="inputHour">
-                            <input type="number" class="form-control" id="inputMinute">
+                            <span class="input-group-text text-white" style="background-color: transparent;">Hora / Minuto</span>
+                            <input type="number" class="form-control text-white" style="background-color: transparent;" id="inputHour">
+                            <input type="number" class="form-control text-white" style="background-color: transparent;" id="inputMinute">
                         </div>
                     </div>
                     <div>
@@ -48,7 +48,7 @@
                     </div>
                 </div>
                 <div class="d-flex justify-content-center align-items-center">
-                    <h4 id="display">00:00:00</h4>
+                    <h4 class="display-3 text-white" id="display">00:00:00</h4>
                 </div>
             </div>
         </div>
