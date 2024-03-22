@@ -84,7 +84,7 @@ h3 {
 }
 
 .toTbbt:hover {
-    background:#d47507;
+    background:#cb7743;
 }
 
 .toFriends:hover {
@@ -138,6 +138,7 @@ h3 {
 .input-group input {
     padding: 8px 12px;
     border: none;
+    color: #ccc;
     border-radius: 9999em;
     outline: none;
     background: linear-gradient(21deg, rgba(147, 149, 150, 0.250), rgba(179, 182, 182, 0.30));
@@ -198,5 +199,5 @@ h3 {
 }
 
 #displayCount {
-    font-size: 56px;
+    font-size: 85px;
 }

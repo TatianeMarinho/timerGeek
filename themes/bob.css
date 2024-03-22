@@ -18,6 +18,10 @@ body {
     background-size: cover;
 }
 
+body h3 {
+    color: #111;
+}
+
 @keyframes changeBackgroundImage {
     0% {
         background-image: url('https://m.media-amazon.com/images/S/pv-target-images/7c501876113d11d39b3c9ac0938ca829bbfebf1db89f456c34fa2fa213fb779b.jpg');
@@ -89,7 +93,7 @@ h3 {
 }
 
 .toHome:hover {
-    background: #111;
+    background: #11111169;
 }
 
 .toGot:hover {
@@ -97,7 +101,7 @@ h3 {
 }
 
 .toHp:hover {
-    background: #590209;
+    background: #590209da;
 }
 
 .toBob:hover {
@@ -109,7 +113,7 @@ h3 {
 }
 
 .toTbbt:hover {
-    background:#d47507;
+    background:#cb7743;
 }
 
 .toFriends:hover {
@@ -224,5 +228,5 @@ h3 {
 }
 
 #displayCount {
-    font-size: 56px;
+    font-size: 85px;
 }
