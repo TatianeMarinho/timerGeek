@@ -93,11 +93,11 @@ h3 {
 }
 
 .toGot:hover {
-    background: rgb(153, 51, 0, 0.502);
+    background: #993300;
 }
 
 .toHp:hover {
-    background: rgb(89, 2, 9, 0.502);
+    background: #590209;
 }
 
 .toBob:hover {
@@ -105,7 +105,7 @@ h3 {
 }
 
 .toStitch:hover {
-    background: #294ce7;
+    background: #1a74ac;
 }
 
 .toTbbt:hover {

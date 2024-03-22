@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: rgb(153, 51, 0);
+    color: #993300;
     -webkit-text-stroke: 0.3px rgb(255, 255, 255, 0.6);
     font-style: bold;
     width: 100%;
@@ -98,15 +98,15 @@ h3 {
 }
 
 .toHp:hover {
-    background: rgb(89, 2, 9, 0.502);
+    background: #590209;
 }
 
 .toBob:hover {
-    background: rgb(247, 231, 58, 0.702);
+    background: #f7e73a;
 }
 
 .toStitch:hover {
-    background: #294ce7;
+    background: #1a74ac;
 }
 
 .toTbbt:hover {
@@ -165,6 +165,7 @@ h3 {
 .input-group input {
     padding: 8px 12px;
     border: none;
+    color: #ccc;
     border-radius: 9999em;
     outline: none;
     background: linear-gradient(21deg, rgba(153, 51, 0, 0.550), rgba(153, 51, 0, 0.700));
@@ -177,9 +178,9 @@ h3 {
 .input-group input:focus {
     box-shadow: inset 0 0 0 3px #f8bea1f1, 0 0 0 4px #f8bea1f1, 3px -3px 30px #e0ac92f1, -3px 3px 30px #bd907af1;
 }
-
+ss
 .input-group input::placeholder {
-    color: #b6bbc0;
+    color: #ccc;
 }
 
 .input-group span {
