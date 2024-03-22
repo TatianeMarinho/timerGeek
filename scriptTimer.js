@@ -41,7 +41,7 @@ const updateDisplay = () => {
     const hours = Math.floor(totalSeconds / 3600).toString().padStart(2,'0'); // calcula o num. de h. restante, converte em string e coloca um zero a esquerda se o numero tiver apenas um digito
     const minutes = Math.floor((totalSeconds % 3600) / 60).toString().padStart(2, '0');
     const seconds = (totalSeconds % 60).toString().padStart(2,'0');
-    document.getElementById('display').textContent = `${hours}:${minutes}:${seconds}`;
+    document.getElementById('displayCount').textContent = `${hours}:${minutes}:${seconds}`;
 }
 
 // configurar o tempo inicial do temporizador

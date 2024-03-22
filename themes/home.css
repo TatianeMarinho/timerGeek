@@ -169,12 +169,34 @@ h3 {
     align-items: center;
 }
 
-.input-container {
-    position: relative;
+#buttonsComands {
     display: flex;
-    align-items: center;
+    margin-top: 25px;
+    justify-content: center;
 }
 
-.input-container + .input-container {
-    margin-left: 10px; /
+.growComands {
+    display: inline-block;
+    margin: 1em;
+}
+
+#startButton:hover {
+    background: #858383;
+}
+
+#pauseButton:hover {
+    background: #858383;
+}
+
+#resetButton:hover {
+    background: #858383;
+}
+
+.display {
+    display: flex;
+    justify-content: center;
+}
+
+#displayCount {
+    font-size: 56px;
 }
