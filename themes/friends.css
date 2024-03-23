@@ -6,8 +6,8 @@
 
 body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: #1a74ac;
-    -webkit-text-stroke: 0.3px #f2d6a4;
+    color: #b3a3d9;
+    -webkit-text-stroke: 0.3px #1c234a;
     font-style: bold;
     width: 100%;
     height: 100%;
@@ -19,24 +19,24 @@ body {
 }
 
 body h3 {
-    color: #f2d6a4;
+    color: #233031;
 }
 
 @keyframes changeBackgroundImage {
     0% {
-        background-image: url('https://wallpapers.com/images/high/lilo-and-stitch-hula-dancing-wowu36cmsx7xvkxy.webp');
+        background-image: url('https://wallpapers.com/images/high/friends-tv-show-coffeehouse-mw3j8y0rqvinit75.webp');
     }
     25% {
-        background-image: url('https://wallpapers.com/images/hd/stitch-and-lilo-in-hula-tccf0wywkk27ft1k.webp');
+        background-image: url('https://wallpapers.com/images/high/friends-tv-show-desktop-jf3z6vs7gfusf7ax.webp');
     }
     50% {
-        background-image: url('https://wallpapers.com/images/high/sad-lilo-stitch-sitting-17t2wjdwa2v807i0.webp');
+        background-image: url('https://wallpapers.com/images/high/friends-pictorial-desktop-byvaoybuyo9khptk.webp');
     }
     75% {
-        background-image: url('https://wallpapers.com/images/high/cute-disney-stitch-and-angel-ndg9ieal8leywgsf.webp');
+        background-image: url('https://wallpapers.com/images/high/friends-desktop-polaroids-iypocloyarjkgmko.webp');
     }
     100% {
-        background-image: url('https://wallpapers.com/images/hd/my-dear-stitch-and-angel-hd-43yw3ftd4efgd05q.webp');
+        background-image: url('https://wallpapers.com/images/high/friends-tv-show-above-the-city-3vmch0exopfkgmbc.webp');
     }
 }
 
@@ -63,18 +63,18 @@ h3 {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background-color: rgb(26, 116, 172, 0.23);
+    background-color: rgb(179, 163, 217, 0.32);
     padding: 20px;
     border-radius:0px 0px 50px 50px;
     -moz-border-radius:0px 0px 0px 50px;
     -webkit-border-radius:0px 0px 0px 50px;
-    box-shadow: 0 0 10px #f2d6a4;
+    box-shadow: 0 0 10px #1c234a;
 }
 
 .circleButton {
     font-family: 'Roboto', sans-serif;
-    color: #f2d6a4;
-    background: rgb(26, 116, 172, 0.723);
+    color: #1c234a;
+    background: rgb(179, 163, 217, 0.750);
     display: inline-block;
     font-size: 1.3em;
     border: none;
@@ -110,15 +110,15 @@ h3 {
 }
 
 .toStitch:hover {
-    background: rgb(26, 116, 172, 0.723);
+    background: #1a74ac;
 }
 
 .toTbbt:hover {
-    background:#cb7743;
+    background:#d47507;
 }
 
 .toFriends:hover {
-    background: #b3a3d9;
+    background: rgb(179, 163, 217, 0.750);
 }
 
 @keyframes circle-anim {
@@ -147,8 +147,8 @@ h3 {
     margin: auto;
     padding: 30px;
     border-radius: 8px;
-    background-color: rgb(26, 116, 172, 0.23);;
-    box-shadow: 0 0 10px #f2d6a4;
+    background-color: rgb(179, 163, 217, 0.32);
+    box-shadow: 0 0 10px #1c234a;
     padding: 20px;
     align-self: center;
     display: flex;
@@ -169,10 +169,10 @@ h3 {
 .input-group input {
     padding: 8px 12px;
     border: none;
-    color: #f2d6a4;
+    color: #1c234a;
     border-radius: 9999em;
     outline: none;
-    background: linear-gradient(21deg, rgba(26, 116, 172, 0.450), rgba(26, 116, 172, 0.700));
+    background: linear-gradient(21deg, rgba(179, 163, 217, 0.550), rgba(179, 163, 217, 0.800));
     transition: box-shadow 0.3s ease, background-color 0.3s ease;
     width: 100px;
     height: 40px;
@@ -180,11 +180,11 @@ h3 {
 }
 
 .input-group input:focus {
-    box-shadow: inset 0 0 0 3px #f2d6a4, 0 0 0 4px #f2d6a4, 3px -3px 30px #dfc497, -3px 3px 30px #c2aa80;
+    box-shadow: inset 0 0 0 3px #6f6b8d, 0 0 0 4px #6f6b8d, 3px -3px 30px #5f5c79, -3px 3px 30px #514e69;
 }
 
 .input-group input::placeholder {
-    color: #f2d6a4;
+    color: #1c234a;
 }
 
 .input-group span {
@@ -192,7 +192,7 @@ h3 {
     top: 50%;
     transform: translateY(-50%);
     right: 12px;
-    color: #c2aa80;
+    color: #6f6b8d;
 }
 
 .input-group {
@@ -213,15 +213,15 @@ h3 {
 }
 
 #startButton:hover {
-    background: #c2aa80;
+    background: #6f6b8d;
 }
 
 #pauseButton:hover {
-    background: #c2aa80;
+    background: #6f6b8d;
 }
 
 #resetButton:hover {
-    background: #c2aa80;
+    background: #6f6b8d;
 }
 
 .display {
