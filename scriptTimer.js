@@ -1,13 +1,16 @@
 let timer;
 let running = false;
 let totalSeconds = 0;
+let elapsedTime = 0;
 
 // iniciar o temporizador
 const startTimer = () => {
     setInitialTimer();
     if (!running) {
         running = true;
-        timer = setInterval(updateTimer, 1000)
+        timer = setInterval(updateTimer, 1000);
+        document.getElementById('inputHour').value = '';
+        document.getElementById('inputMinute').value = '';
     }
 }
 
@@ -15,6 +18,7 @@ const startTimer = () => {
 const pauseTimer = () => {
     running = false;
     clearInterval(timer);
+    elapsedTime = totalSeconds;
 }
 
 // resetar o temporizador
@@ -22,6 +26,7 @@ const resetTimer = () => {
     running = false;
     clearInterval(timer);
     totalSeconds = 0;
+    elapsedTime = 0;
     updateDisplay();
 }
 
@@ -49,7 +54,7 @@ const setInitialTimer = () => {
     const hours = parseInt(document.getElementById('inputHour').value) || 0;
     const minutes = parseInt(document.getElementById('inputMinute').value) || 0;
 
-    totalSeconds = (hours * 3600) + (minutes * 60);
+    totalSeconds = (hours * 3600) + (minutes * 60) + elapsedTime;
     updateDisplay();
 }
 
