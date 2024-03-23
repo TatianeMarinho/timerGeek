@@ -45,7 +45,7 @@ const updateDisplay = () => {
 }
 
 // configurar o tempo inicial do temporizador
-const setInitialTimer= () => {
+const setInitialTimer = () => {
     const hours = parseInt(document.getElementById('inputHour').value) || 0;
     const minutes = parseInt(document.getElementById('inputMinute').value) || 0;
 
@@ -59,3 +59,37 @@ document.getElementById('resetButton').addEventListener('click', resetTimer);
 
 document.getElementById('inputHour').addEventListener('input', setInitialTimer);
 document.getElementById('inputMinute').addEventListener('input', setInitialTimer);
+
+const redirectToPage = (style) => {
+    const link = document.querySelector('link[rel="stylesheet"]');
+    link.href = `/themes/${style}.css`;
+    document.head.appendChild(link);
+}
+
+document.getElementById('home').addEventListener('click', () => {
+    redirectToPage('home');
+})
+
+document.getElementById('gameOfThrones').addEventListener('click', () => {
+    redirectToPage('got');
+})
+
+document.getElementById('harryPotter').addEventListener('click', () => {
+    redirectToPage('hp');
+})
+
+document.getElementById('bobEsponja').addEventListener('click', () => {
+    redirectToPage('bob');
+})
+
+document.getElementById('stitch').addEventListener('click', () => {
+    redirectToPage('stitch');
+})
+
+document.getElementById('theBibBangTheory').addEventListener('click', () => {
+    redirectToPage('tbbt');
+})
+
+document.getElementById('friends').addEventListener('click', () => {
+    redirectToPage('friends');
+})
