@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #993300;
+    -webkit-text-stroke: 0.3px #ccc;
+    font-style: bold;
+    width: 100%;
+    height: 100%;
+    animation: changeBackgroundImage 13s infinite;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+body h3 {
+    color: #ccc;
+}
+
+@keyframes changeBackgroundImage {
+    0% {
+        background-image: url('https://wallpapers.com/images/hd/iron-throne-of-game-of-thrones-nf79q124fikj37px.webp');
+    }
+    25% {
+        background-image: url('https://wallpapers.com/images/high/tv-4k-game-of-thrones-battle-of-winterfell-qr0ggxz2feqdq4fe.webp');
+    }
+    50% {
+        background-image: url('https://wallpapers.com/images/high/cast-of-game-of-thrones-rx5g44a6ojz3i4uw.webp');
+    }
+    75% {
+        background-image: url('https://wallpapers.com/images/hd/hd-white-walker-of-game-of-thrones-us0p9v0u09ihq7d7.webp');
+    }
+    100% {
+        background-image: url('https://wallpapers.com/images/high/viserion-fighting-jon-snow-game-of-thrones-ltf6569q7zodn6yz.webp');
+    }
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+header h3 {
+    flex-grow: 1;
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-right: auto;
+}
+
+h3 {
+    text-align: center;
+}
+
+#buttonsHeader {
+    flex-grow: 2;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(153, 51, 0, 0.10);
+    padding: 20px;
+    border-radius:0px 0px 50px 50px;
+    -moz-border-radius:0px 0px 0px 50px;
+    -webkit-border-radius:0px 0px 0px 50px;
+    box-shadow: 0 0 10px #ccc;
+}
+
+.circleButton {
+    font-family: 'Roboto', sans-serif;
+    color: #ccc;
+    background: rgb(153, 51, 0, 0.602);
+    display: inline-block;
+    font-size: 1.3em;
+    border: none;
+    border-radius: 50%;
+    transition: all 0.2s ease;
+    padding: 0.30em;
+}
+
+.circleButton:hover {
+    animation: circle-anim 0.3s ease forwards;
+    transition: all 0.4s ease;
+}
+
+.growContainer {
+    display: inline-block;
+    margin: 1em;
+}
+
+.toHome:hover {
+    background: #111;
+}
+
+.toGot:hover {
+    background: rgb(153, 51, 0, 0.502);
+}
+
+.toHp:hover {
+    background: #590209;
+}
+
+.toBob:hover {
+    background: #f7e73a;
+}
+
+.toStitch:hover {
+    background: #1a74ac;
+}
+
+.toTbbt:hover {
+    background:#cb7743;
+}
+
+.toFriends:hover {
+    background: #b129e7;
+}
+
+@keyframes circle-anim {
+    0% {
+
+    }
+    90% {
+        padding: 0.45em;
+        margin: -0.45em;
+    }
+    100% {
+        padding: 0.35em;
+        margin: -0.35em;
+    }
+}
+
+.container {
+    display: flex;
+    align-content: center;
+    height: 100vh;
+}
+
+#box {
+    width: 45%;
+    height: 35%;
+    margin: auto;
+    padding: 30px;
+    border-radius: 8px;
+    background-color: rgb(153, 51, 0, 0.15);;
+    box-shadow: 0 0 10px #ccc;
+    padding: 20px;
+    align-self: center;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.inputTime {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-group {
+    display: flex;
+}
+
+.input-group input {
+    padding: 8px 12px;
+    border: none;
+    color: #ccc;
+    border-radius: 9999em;
+    outline: none;
+    background: linear-gradient(21deg, rgba(153, 51, 0, 0.550), rgba(153, 51, 0, 0.700));
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
+    width: 100px;
+    height: 40px;
+    margin-right: 20px;
+}
+
+.input-group input:focus {
+    box-shadow: inset 0 0 0 3px #f8bea1f1, 0 0 0 4px #f8bea1f1, 3px -3px 30px #e0ac92f1, -3px 3px 30px #bd907af1;
+}
+ss
+.input-group input::placeholder {
+    color: #ccc;
+}
+
+.input-group span {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 12px;
+    color: #e0ac92f1;
+}
+
+.input-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#buttonsComands {
+    display: flex;
+    margin-top: 25px;
+    justify-content: center;
+}
+
+.growComands {
+    display: inline-block;
+    margin: 1em;
+}
+
+#startButton:hover {
+    background: #e0ac92f1;
+}
+
+#pauseButton:hover {
+    background: #e0ac92f1;
+}
+
+#resetButton:hover {
+    background: #e0ac92f1;
+}
+
+.display {
+    display: flex;
+    justify-content: center;
+}
+
+#displayCount {
+    font-size: 85px;
+}

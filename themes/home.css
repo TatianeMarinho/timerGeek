@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #111;
+    color: #eee;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #111;
+}
+
+header h3 {
+    flex-grow: 1;
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-right: auto;
+}
+
+h3 {
+    text-align: center;
+}
+
+#buttonsHeader {
+    flex-grow: 2;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+    border-radius:0px 0px 50px 50px;
+    -moz-border-radius:0px 0px 0px 50px;
+    -webkit-border-radius:0px 0px 0px 50px;
+    box-shadow: 0 0 10px #ccc;
+}
+
+.circleButton {
+    font-family: 'Roboto', sans-serif;
+    color: #ccc;
+    background: #3d3c3c80;
+    display: inline-block;
+    font-size: 1.3em;
+    border: none;
+    border-radius: 50%;
+    transition: all 0.2s ease;
+    padding: 0.30em;
+}
+
+.circleButton:hover {
+    animation: circle-anim 0.3s ease forwards;
+    transition: all 0.4s ease;
+}
+
+.growContainer {
+    display: inline-block;
+    margin: 1em;
+}
+
+.toHome:hover {
+    background: #111;
+}
+
+.toGot:hover {
+    background: #993300;
+}
+
+.toHp:hover {
+    background: #590209;
+}
+
+.toBob:hover {
+    background: #f7e73a;
+}
+
+.toStitch:hover {
+    background: #1a74ac;
+}
+
+.toTbbt:hover {
+    background:#cb7743;
+}
+
+.toFriends:hover {
+    background: #b3a3d9;
+}
+
+@keyframes circle-anim {
+    0% {
+
+    }
+    90% {
+        padding: 0.45em;
+        margin: -0.45em;
+    }
+    100% {
+        padding: 0.35em;
+        margin: -0.35em;
+    }
+}
+
+.container {
+    display: flex;
+    align-content: center;
+    height: 100vh;
+}
+
+#box {
+    width: 45%;
+    height: 35%;
+    margin: auto;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #ccc;
+    padding: 20px;
+    align-self: center;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.inputTime {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-group {
+    display: flex;
+}
+
+.input-group input {
+    padding: 8px 12px;
+    border: none;
+    color: #ccc;
+    border-radius: 9999em;
+    outline: none;
+    background: linear-gradient(21deg, rgba(147, 149, 150, 0.250), rgba(179, 182, 182, 0.30));
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
+    width: 100px;
+    height: 40px;
+    margin-right: 20px;
+}
+
+.input-group input:focus {
+    box-shadow: inset 0 0 0 3px #e4e3e3, 0 0 0 4px #e4e3e3, 3px -3px 30px #adb1b3, -3px 3px 30px #9a9c9c;
+}
+
+.input-group input::placeholder {
+    color: #b6bbc0;
+}
+
+.input-group span {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 12px;
+    color: #b1afaf;
+}
+
+.input-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#buttonsComands {
+    display: flex;
+    margin-top: 25px;
+    justify-content: center;
+}
+
+.growComands {
+    display: inline-block;
+    margin: 1em;
+}
+
+#startButton:hover {
+    background: #858383;
+}
+
+#pauseButton:hover {
+    background: #858383;
+}
+
+#resetButton:hover {
+    background: #858383;
+}
+
+.display {
+    display: flex;
+    justify-content: center;
+}
+
+#displayCount {
+    font-size: 85px;
+}

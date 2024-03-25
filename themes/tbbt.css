@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #cb7743;
+    -webkit-text-stroke: 0.3px #233031;
+    font-style: bold;
+    width: 100%;
+    height: 100%;
+    animation: changeBackgroundImage 13s infinite;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+body h3 {
+    color: #233031;
+}
+
+@keyframes changeBackgroundImage {
+    0% {
+        background-image: url('https://beam-images.warnermediacdn.com/BEAM_LWM_DELIVERABLES/c8ea8e19-cae7-4683-9b62-cdbbed744784/e9a6db90-d1e0-11ee-bca3-12c84011b169?host=wbd-images.prod-vod.h264.io&partner=beamcom');
+    }
+    25% {
+        background-image: url('https://wallpapercave.com/wp/xGSryT8.jpg');
+    }
+    50% {
+        background-image: url('https://virtualbackgrounds.site/wp-content/uploads/2022/03/the-big-bang-theory-elevator-hall-1024x576.jpg');
+    }
+    75% {
+        background-image: url('https://images.ctfassets.net/7knnd7zn6q3g/5NZP5VdarVygbqBcfDKYsD/34636172ba637938239d82ec036667da/p-1-the-big-bang-theory-by-the-numbers.jpeg');
+    }
+    100% {
+        background-image: url('https://images8.alphacoders.com/431/431311.jpg');
+    }
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+header h3 {
+    flex-grow: 1;
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-right: auto;
+}
+
+h3 {
+    text-align: center;
+}
+
+#buttonsHeader {
+    flex-grow: 2;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(203, 119, 67, 0.45);
+    padding: 20px;
+    border-radius:0px 0px 50px 50px;
+    -moz-border-radius:0px 0px 0px 50px;
+    -webkit-border-radius:0px 0px 0px 50px;
+    box-shadow: 0 0 10px #233031;
+}
+
+.circleButton {
+    font-family: 'Roboto', sans-serif;
+    color: #233031;
+    background: rgb(203, 119, 67, 0.890);
+    display: inline-block;
+    font-size: 1.3em;
+    border: none;
+    border-radius: 50%;
+    transition: all 0.2s ease;
+    padding: 0.30em;
+}
+
+.circleButton:hover {
+    animation: circle-anim 0.3s ease forwards;
+    transition: all 0.4s ease;
+}
+
+.growContainer {
+    display: inline-block;
+    margin: 1em;
+}
+
+.toHome:hover {
+    background: #111;
+}
+
+.toGot:hover {
+    background: #993300;
+}
+
+.toHp:hover {
+    background: #590209;
+}
+
+.toBob:hover {
+    background: #f7e73a;
+}
+
+.toStitch:hover {
+    background: #1a74ac;
+}
+
+.toTbbt:hover {
+    background:#d47507;
+}
+
+.toFriends:hover {
+    background: #b3a3d9;
+}
+
+@keyframes circle-anim {
+    0% {
+
+    }
+    90% {
+        padding: 0.45em;
+        margin: -0.45em;
+    }
+    100% {
+        padding: 0.35em;
+        margin: -0.35em;
+    }
+}
+
+.container {
+    display: flex;
+    align-content: center;
+    height: 100vh;
+}
+
+#box {
+    width: 45%;
+    height: 35%;
+    margin: auto;
+    padding: 30px;
+    border-radius: 8px;
+    background-color: rgb(203, 119, 67, 0.45);
+    box-shadow: 0 0 10px #233031;
+    padding: 20px;
+    align-self: center;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.inputTime {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-group {
+    display: flex;
+}
+
+.input-group input {
+    padding: 8px 12px;
+    border: none;
+    color: #233031;
+    border-radius: 9999em;
+    outline: none;
+    background: linear-gradient(21deg, rgba(203, 119, 67, 0.550), rgba(203, 119, 67, 0.800));
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
+    width: 100px;
+    height: 40px;
+    margin-right: 20px;
+}
+
+.input-group input:focus {
+    box-shadow: inset 0 0 0 3px #785844, 0 0 0 4px #785844, 3px -3px 30px #614737, -3px 3px 30px #523b2d;
+}
+
+.input-group input::placeholder {
+    color: #233031;
+}
+
+.input-group span {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 12px;
+    color: #785844;
+}
+
+.input-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#buttonsComands {
+    display: flex;
+    margin-top: 25px;
+    justify-content: center;
+}
+
+.growComands {
+    display: inline-block;
+    margin: 1em;
+}
+
+#startButton:hover {
+    background: #785844;
+}
+
+#pauseButton:hover {
+    background: #785844;
+}
+
+#resetButton:hover {
+    background: #785844;
+}
+
+.display {
+    display: flex;
+    justify-content: center;
+}
+
+#displayCount {
+    font-size: 85px;
+}
